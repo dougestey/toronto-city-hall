@@ -1,0 +1,253 @@
+[
+    {
+        "Committee": "Audit Committee",
+        "MTG #": "1",
+        "Session Date": "2015-02-27",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:39AM - 12:26PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "1",
+        "Session Date": "2014-12-02",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "02:03PM - 03:12PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "1",
+        "Session Date": "2014-12-03",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "02:10PM - 03:56PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "2",
+        "Session Date": "2014-12-11",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:36AM - 12:15PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "2",
+        "Session Date": "2014-12-11",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "02:12PM - 05:44PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "2",
+        "Session Date": "2014-12-11",
+        "Session Type": "Afternoon (closed)",
+        "Session Start-End Time": "05:55PM - 06:03PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "2",
+        "Session Date": "2014-12-11",
+        "Session Type": "Evening",
+        "Session Start-End Time": "06:07PM - 07:03PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-10",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:41AM - 12:30PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-10",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "02:12PM - 06:18PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-10",
+        "Session Type": "Evening (closed)",
+        "Session Start-End Time": "06:29PM - 07:06PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-10",
+        "Session Type": "Evening",
+        "Session Start-End Time": "07:15PM - 08:05PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-11",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "04:36PM (Roll Call)",
+        "Present": "N"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-11",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:44AM - 12:30PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-11",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "02:12PM - 03:58PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-11",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "04:07PM - 06:20PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-11",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "04:07PM (Roll Call)",
+        "Present": "Y"
+    },
+    {
+        "Committee": "City Council",
+        "MTG #": "3",
+        "Session Date": "2015-02-11",
+        "Session Type": "Evening",
+        "Session Start-End Time": "06:25PM - 06:35PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "Etobicoke York Community Council",
+        "MTG #": "1",
+        "Session Date": "2014-12-03",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:39AM - 09:41AM",
+        "Present": "N"
+    },
+    {
+        "Committee": "Etobicoke York Community Council",
+        "MTG #": "2",
+        "Session Date": "2014-12-04",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:34AM - 09:40AM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "Etobicoke York Community Council",
+        "MTG #": "3",
+        "Session Date": "2015-01-13",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:35AM - 01:03PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "Etobicoke York Community Council",
+        "MTG #": "3",
+        "Session Date": "2015-01-13",
+        "Session Type": "Afternoon (closed)",
+        "Session Start-End Time": "01:05PM - 01:17PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "Etobicoke York Community Council",
+        "MTG #": "3",
+        "Session Date": "2015-01-13",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "01:18PM - 01:22PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "Etobicoke York Community Council",
+        "MTG #": "4",
+        "Session Date": "2015-02-18",
+        "Session Type": "Evening",
+        "Session Start-End Time": "07:05PM - 09:36PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "Etobicoke York Community Council",
+        "MTG #": "4",
+        "Session Date": "2015-02-18",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:34AM - 12:37PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "Etobicoke York Community Council",
+        "MTG #": "4",
+        "Session Date": "2015-02-18",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "01:40PM - 02:36PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "Government Management Committee",
+        "MTG #": "1",
+        "Session Date": "2015-01-05",
+        "Session Type": "Afternoon",
+        "Session Start-End Time": "12:58PM - 01:35PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "Government Management Committee",
+        "MTG #": "1",
+        "Session Date": "2015-01-05",
+        "Session Type": "Afternoon (closed)",
+        "Session Start-End Time": "12:09PM - 12:53PM",
+        "Present": "N"
+    },
+    {
+        "Committee": "Government Management Committee",
+        "MTG #": "1",
+        "Session Date": "2015-01-05",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:36AM - 12:05PM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "Government Management Committee",
+        "MTG #": "2",
+        "Session Date": "2015-02-17",
+        "Session Type": "Morning",
+        "Session Start-End Time": "11:50AM - 11:52AM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "Government Management Committee",
+        "MTG #": "2",
+        "Session Date": "2015-02-17",
+        "Session Type": "Morning",
+        "Session Start-End Time": "09:35AM - 10:35AM",
+        "Present": "Y"
+    },
+    {
+        "Committee": "Government Management Committee",
+        "MTG #": "2",
+        "Session Date": "2015-02-17",
+        "Session Type": "Morning (closed)",
+        "Session Start-End Time": "10:41AM - 11:47AM",
+        "Present": "Y"
+    },
+    {
+        "Committee": ""
+    }
+]
