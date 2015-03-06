@@ -8,3 +8,4 @@ Use Hall to keep tabs on the council chamber that runs your Toronto.
 #### Featuring: ####
 - Voting record for each member of city council
 - Attendance records for each member of city council
+- More to come
