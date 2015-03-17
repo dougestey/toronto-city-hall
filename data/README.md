@@ -1,1 +1,1 @@
-This directory is merely for testing purposes. API acess coming soon.
+This directory is merely for testing purposes. API access coming soon.
