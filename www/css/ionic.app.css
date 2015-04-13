@@ -7014,3 +7014,7 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+md-toolbar.md-default-theme {
+  background-color: #00bcd4;
+  color: rgba(255, 255, 255, 0.87); }

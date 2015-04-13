@@ -21,3 +21,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+md-toolbar.md-default-theme {
+  background-color: #00bcd4;
+  color: rgba(255,255,255,0.87);
+}
