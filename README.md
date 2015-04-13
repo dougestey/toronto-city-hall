@@ -1,5 +1,5 @@
-# Scope #
-### Take back city hall. ###
+# Toronto City Hall #
+### Time to take it back. ###
 
 You vote once every four years, but how much else do you know about what happens at city hall? Does your elected councillor even show up for work? What motions are being passed?
 
