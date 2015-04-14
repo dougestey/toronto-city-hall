@@ -2,6 +2,10 @@ angular.module('starter.controllers', [])
 
 .controller('MotionsTrendingCtrl', function($scope) {})
 
+.controller('MotionsUpcomingCtrl', function($scope) {})
+
+.controller('MotionsFavouritesCtrl', function($scope) {})
+
 /*.controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {

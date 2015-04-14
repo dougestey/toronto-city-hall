@@ -36,8 +36,9 @@ angular.module('starter', ['ionic', 'ngAria', 'ngMaterial', 'starter.controllers
   })
 
   // Each tab has its own nav history stack:
+
   .state('motions.trending', {
-    url: '/motions/trending',
+    url: '/trending',
     views: {
       'motions-trending': {
         templateUrl: 'templates/motions/trending.html',
@@ -45,6 +46,26 @@ angular.module('starter', ['ionic', 'ngAria', 'ngMaterial', 'starter.controllers
       }
     }
   })
+
+  .state('motions.upcoming', {
+    url: '/upcoming',
+    views: {
+      'motions-upcoming': {
+        templateUrl: 'templates/motions/upcoming.html',
+        controller: 'MotionsUpcomingCtrl'
+      }
+    }
+  })
+
+  .state('motions.favourites', {
+    url: '/favourites',
+    views: {
+      'motions-favourites': {
+        templateUrl: 'templates/motions/favourites.html',
+        controller: 'MotionsFavouritesCtrl'
+      }
+    }
+  });
 
   /*.state('tab.friends', {
       url: '/friends',
