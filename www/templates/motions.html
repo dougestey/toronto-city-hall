@@ -3,13 +3,12 @@ Create tabs with an icon and label, using the tabs-positive style.
 Each tab's child <ion-nav-view> directive will have its own
 navigation history that also transitions its views in and out.
 -->
-<div class="bar bar-header has-tabs-top bar-calm">
+<!--<div class="bar bar-header has-tabs-top bar-calm">
   <h1 class="title">Motions</h1>
-</div>
+</div>-->
 
-<ion-tabs class="tabs-striped tabs-top tabs-background-calm tabs-color-light">
+<!--<ion-tabs class="tabs-striped tabs-top tabs-background-calm tabs-color-light">
 
-  <!-- Dashboard Tab -->
   <ion-tab title="Trending" href="#/motions/trending">
     <ion-nav-view name="motions-trending"></ion-nav-view>
   </ion-tab>
@@ -23,4 +22,34 @@ navigation history that also transitions its views in and out.
   </ion-tab>
 
 
-</ion-tabs>
+</ion-tabs>-->
+
+<md-toolbar>
+  <div class="md-toolbar-tools">
+    <!--<md-button class="md-icon-button" aria-label="Settings">
+      <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+    </md-button>-->
+    <h2>
+      <span>Motions</span>
+    </h2>
+    <span flex></span>
+    <!--<md-button class="md-icon-button" aria-label="Favorite">
+      <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+    </md-button>
+    <md-button class="md-icon-button" aria-label="More">
+      <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+    </md-button>-->
+  </div>
+</md-toolbar>
+
+<md-tabs md-selected="selectedIndex" class="md-primary" md-no-pagination="true" md-no-ink="true">
+  <md-tab label="Trends" md-on-select="go('motions.trending')">
+    <div ui-view="trending"></div>
+  </md-tab>
+  <md-tab label="Upcoming" md-on-select="go('motions.upcoming')">
+    <div ui-view="upcoming"></div>
+  </md-tab>
+  <md-tab label="Faves" md-on-select="go('motions.favourites')">
+    <div ui-view="favourites"></div>
+  </md-tab>
+</md-tabs>

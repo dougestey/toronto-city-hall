@@ -1,10 +1,12 @@
 angular.module('starter.controllers', [])
 
-.controller('MotionsTrendingCtrl', function($scope) {})
+.controller('MotionsCtrl', function($scope, $state) {
 
-.controller('MotionsUpcomingCtrl', function($scope) {})
+  $scope.go = function(destination){
+    $state.go(destination);
+  }
 
-.controller('MotionsFavouritesCtrl', function($scope) {})
+})
 
 /*.controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();

@@ -21,7 +21,15 @@ angular.module('starter', ['ionic', 'ngAria', 'ngMaterial', 'starter.controllers
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
+
+  $mdThemingProvider.theme('default')
+    .primaryPalette('cyan', {
+      'default': '500'
+    })
+    .accentPalette('pink', {
+      'default': '400'
+    });
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -32,7 +40,8 @@ angular.module('starter', ['ionic', 'ngAria', 'ngMaterial', 'starter.controllers
   .state('motions', {
     url: '/motions',
     abstract: true,
-    templateUrl: 'templates/motions.html'
+    templateUrl: 'templates/motions.html',
+    controller: 'MotionsCtrl'
   })
 
   // Each tab has its own nav history stack:
@@ -40,9 +49,8 @@ angular.module('starter', ['ionic', 'ngAria', 'ngMaterial', 'starter.controllers
   .state('motions.trending', {
     url: '/trending',
     views: {
-      'motions-trending': {
-        templateUrl: 'templates/motions/trending.html',
-        controller: 'MotionsTrendingCtrl'
+      'trending': {
+        templateUrl: 'templates/motions/trending.html'
       }
     }
   })
@@ -50,9 +58,8 @@ angular.module('starter', ['ionic', 'ngAria', 'ngMaterial', 'starter.controllers
   .state('motions.upcoming', {
     url: '/upcoming',
     views: {
-      'motions-upcoming': {
-        templateUrl: 'templates/motions/upcoming.html',
-        controller: 'MotionsUpcomingCtrl'
+      'upcoming': {
+        templateUrl: 'templates/motions/upcoming.html'
       }
     }
   })
@@ -60,9 +67,8 @@ angular.module('starter', ['ionic', 'ngAria', 'ngMaterial', 'starter.controllers
   .state('motions.favourites', {
     url: '/favourites',
     views: {
-      'motions-favourites': {
-        templateUrl: 'templates/motions/favourites.html',
-        controller: 'MotionsFavouritesCtrl'
+      'favourites': {
+        templateUrl: 'templates/motions/favourites.html'
       }
     }
   });

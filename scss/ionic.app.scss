@@ -15,15 +15,26 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$calm:                            #00bcd4 !default;
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import "../lib/angular-material/angular-material.css";
 
 md-toolbar.md-default-theme {
   background-color: #00bcd4;
   color: rgba(255,255,255,0.87);
+  box-shadow: none;
+  h2 {
+    font-weight: normal;
+    color: inherit;
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+  }
 }
 
 md-content {
@@ -32,4 +43,21 @@ md-content {
   right: 0;
   bottom: 0;
   top: 0;
+}
+
+md-tabs {
+  height: 100%;
+}
+
+.md-tabs-content {
+  bottom: 0;
+  top: 112px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.md-paginating .md-header-items-container {
+  left: 0;
+  right: 0;
 }
