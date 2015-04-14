@@ -3,9 +3,7 @@
 
 You vote once every four years, but how much else do you know about what happens at city hall? Does your elected councillor even show up for work? What motions are being passed?
 
-Use Scope to keep tabs on the council chamber that runs your Toronto.
-
-#### Featuring: ####
-- Voting record for each member of city council
-- Attendance records for each member of city council
-- More to come
+- Track your city councillor's progress & compare it against the rest of the chamber
+- Access detailed attendance & voting records for each member of city council
+- Look up individual councillor profiles and voting trends
+- Get in direct contact with your city councillor about a particular issue
