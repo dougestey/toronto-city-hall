@@ -36,7 +36,6 @@ angular.module('starter', ['ionic', 'ngAria', 'ngMaterial', 'starter.controllers
   })
 
   // Each tab has its own nav history stack:
-
   .state('motions.trending', {
     url: '/motions/trending',
     views: {
