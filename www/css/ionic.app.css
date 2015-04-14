@@ -7018,3 +7018,10 @@ a.button {
 md-toolbar.md-default-theme {
   background-color: #00bcd4;
   color: rgba(255, 255, 255, 0.87); }
+
+md-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 10%; }
