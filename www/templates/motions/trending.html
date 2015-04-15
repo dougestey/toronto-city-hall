@@ -1,10 +1,10 @@
 <ion-view view-title="motions-trending">
   <ion-content class="padding">
-    <md-card>
-      <md-card-content>
-        <h2 class="md-title">Trending</h2>
-        <p>Content</p>
-      </md-card-content>
-    </md-card>
+    <md-list-item class="md-3-line" ng-repeat="motion in motions">
+      <div class="md-list-item-text">
+        <h3>{{ motion["Agenda Item Title"] }}</h3>
+        <p>{{ motion["Agenda Item #"] }}</p>
+      </div>
+    </md-list-item>
   </ion-content>
 </ion-view>

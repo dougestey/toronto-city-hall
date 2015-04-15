@@ -1,10 +1,18 @@
 angular.module('starter.controllers', [])
 
-.controller('MotionsCtrl', function($scope, $state) {
+.controller('MotionsCtrl', function($scope, $state, Motions) {
 
   $scope.go = function(destination){
     $state.go(destination);
   }
+
+  Motions.all().then(function(data){
+    $scope.motions = data;
+  });
+
+  /*(function(){
+    
+  })();*/
 
 })
 
