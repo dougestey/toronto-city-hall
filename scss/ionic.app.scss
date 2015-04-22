@@ -21,7 +21,7 @@ $calm:                            #00bcd4 !default;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+//@import "www/lib/ionic/scss/ionic";
 @import "../lib/angular-material/angular-material.css";
 
 body,
@@ -57,7 +57,11 @@ md-content#main {
 }
 
 md-tabs {
-  height: 100%;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 .md-tabs-content {
