@@ -1,12 +1,8 @@
-<ion-view view-title="motions-trending">
-  <ion-content class="padding">
-    <md-list>
-      <md-list-item class="md-2-line" ng-repeat="motion in motions">
-        <div class="md-list-item-text">
-          <h3>{{ motion["Agenda Item Title"] }}</h3>
-          <p>{{ motion["Agenda Item #"] }}</p>
-        </div>
-      </md-list-item>
-    </md-list>
-  </ion-content>
-</ion-view>
+<md-list>
+  <md-list-item class="md-2-line" ng-repeat="motion in motions">
+    <div class="md-list-item-text">
+      <h3>{{ motion["Agenda Item Title"] }}</h3>
+      <p>{{ motion["Agenda Item #"] }}</p>
+    </div>
+  </md-list-item>
+</md-list>

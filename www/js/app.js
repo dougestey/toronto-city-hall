@@ -1,5 +1,9 @@
 angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.controllers', 'hall.services'])
 
+.run(function(){
+  //
+})
+
 .config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
 
   $mdThemingProvider.theme('default')

@@ -26,7 +26,8 @@ md-toolbar.md-default-theme {
   box-shadow: none;
   font-size: 1.3rem;
   font-weight: 400;
-  letter-spacing: 0.005em; }
+  letter-spacing: 0.005em;
+  padding-top: 25px; }
   md-toolbar.md-default-theme h1, md-toolbar.md-default-theme h2 {
     font-weight: normal;
     font-size: inherit;
@@ -42,7 +43,7 @@ md-content#main {
   top: 0; }
 
 md-tabs {
-  top: 64px;
+  top: 88px;
   left: 0;
   right: 0;
   bottom: 0;
