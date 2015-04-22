@@ -27,7 +27,23 @@
     <script src="js/services.js"></script>
   </head>
   <body ng-app="hall">
-    <div layout="column" layout-fill>
+    <div layout="column" layout-fill ng-controller="AppCtrl">
+      <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="menu" md-is-locked-open="$mdMedia('gt-md')">
+        <md-toolbar class="md-theme-indigo">
+          <h1 class="md-toolbar-tools">City Hall</h1>
+        </md-toolbar>
+        <md-content layout-padding ng-controller="MenuCtrl">
+          <md-button ng-click="go('motions.upcoming')" class="md-primary">
+            Motions
+          </md-button>
+          <md-button ng-click="go('councillors.roster')" class="md-primary">
+            Councillors
+          </md-button>
+          <md-button ng-click="close()" class="md-primary">
+            Close
+          </md-button>
+        </md-content>
+      </md-sidenav>
       <md-content id="main">
         <ui-view></ui-view>
       </md-content>

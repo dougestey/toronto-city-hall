@@ -22,9 +22,6 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
     templateUrl: 'templates/motions.html',
     controller: 'MotionsCtrl'
   })
-
-  // Each tab has its own nav history stack:
-
   .state('motions.trending', {
     url: '/trending',
     views: {
@@ -33,7 +30,6 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
       }
     }
   })
-
   .state('motions.upcoming', {
     url: '/upcoming',
     views: {
@@ -42,12 +38,26 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
       }
     }
   })
-
   .state('motions.favourites', {
     url: '/favourites',
     views: {
       'favourites': {
         templateUrl: 'templates/motions/favourites.html'
+      }
+    }
+  })
+
+  .state('councillors', {
+    url: '/councillors',
+    abstract: true,
+    templateUrl: 'templates/councillors.html',
+    controller: 'CouncillorsCtrl'
+  })
+  .state('councillors.roster', {
+    url: '/roster',
+    views: {
+      'roster': {
+        templateUrl: 'templates/councillors/roster.html'
       }
     }
   });
