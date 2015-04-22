@@ -27,8 +27,8 @@ angular.module('starter', ['ionic', 'ngAria', 'ngMaterial', 'starter.controllers
     .primaryPalette('cyan', {
       'default': '500'
     })
-    .accentPalette('pink', {
-      'default': '400'
+    .accentPalette('lime', {
+      'default': 'A200'
     });
 
   // Ionic uses AngularUI Router which uses the concept of states

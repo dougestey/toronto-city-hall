@@ -26,21 +26,29 @@ navigation history that also transitions its views in and out.
 
 <md-toolbar>
   <div class="md-toolbar-tools">
-    <!--<md-button class="md-icon-button" aria-label="Settings">
+    <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleMenu()">
       <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-    </md-button>-->
+    </md-button>
     <h2>
       <span>Motions</span>
     </h2>
     <span flex></span>
-    <!--<md-button class="md-icon-button" aria-label="Favorite">
-      <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
-    </md-button>
     <md-button class="md-icon-button" aria-label="More">
       <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
-    </md-button>-->
+    </md-button>
   </div>
 </md-toolbar>
+
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="menu" md-is-locked-open="$mdMedia('gt-md')">
+  <md-toolbar class="md-theme-indigo">
+    <h1 class="md-toolbar-tools">City Hall</h1>
+  </md-toolbar>
+  <md-content layout-padding ng-controller="MotionsMenuCtrl">
+    <md-button ng-click="close()" class="md-primary">
+      Close
+    </md-button>
+  </md-content>
+</md-sidenav>
 
 <md-tabs md-selected="selectedIndex" class="md-primary" md-no-pagination="true" md-no-ink="true">
   <md-tab label="Trends" md-on-select="go('motions.trending')">

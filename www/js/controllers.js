@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('MotionsCtrl', function($scope, $state, Motions) {
+.controller('MotionsCtrl', function($scope, $state, $mdSidenav, Motions) {
 
   $scope.go = function(destination){
     $state.go(destination);
@@ -10,11 +10,23 @@ angular.module('starter.controllers', [])
     $scope.motions = data;
   });
 
-  /*(function(){
-    
-  })();*/
+  function buildToggler(navID) {
+    return function() {
+      return $mdSidenav(navID).toggle()
+        .then(function () {
+          console.log('done');
+        });
+    }
+  }
+
+  $scope.toggleMenu = buildToggler('menu'); 
 
 })
+.controller('MotionsMenuCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+  $scope.close = function () {
+    $mdSidenav('menu').close();
+  };
+});
 
 /*.controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();

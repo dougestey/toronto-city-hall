@@ -24,20 +24,27 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 @import "../lib/angular-material/angular-material.css";
 
+body,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Roboto';
+}
+
 md-toolbar.md-default-theme {
   background-color: #00bcd4;
   color: rgba(255,255,255,0.87);
   box-shadow: none;
-  h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  h1, h2 {
     font-weight: normal;
     color: inherit;
     margin: 0;
-    font-family: inherit;
     line-height: inherit;
   }
 }
 
-md-content {
+md-content#main {
   position: absolute;
   left: 0;
   right: 0;
