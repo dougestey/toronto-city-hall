@@ -1,29 +1,3 @@
-<!--
-Create tabs with an icon and label, using the tabs-positive style.
-Each tab's child <ion-nav-view> directive will have its own
-navigation history that also transitions its views in and out.
--->
-<!--<div class="bar bar-header has-tabs-top bar-calm">
-  <h1 class="title">Motions</h1>
-</div>-->
-
-<!--<ion-tabs class="tabs-striped tabs-top tabs-background-calm tabs-color-light">
-
-  <ion-tab title="Trending" href="#/motions/trending">
-    <ion-nav-view name="motions-trending"></ion-nav-view>
-  </ion-tab>
-
-  <ion-tab title="Upcoming" href="#/motions/upcoming">
-    <ion-nav-view name="motions-upcoming"></ion-nav-view>
-  </ion-tab>
-
-  <ion-tab title="Favourites" href="#/motions/favourites">
-    <ion-nav-view name="motions-favourites"></ion-nav-view>
-  </ion-tab>
-
-
-</ion-tabs>-->
-
 <md-toolbar>
   <div class="md-toolbar-tools">
     <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleMenu()">
@@ -50,7 +24,7 @@ navigation history that also transitions its views in and out.
   </md-content>
 </md-sidenav>
 
-<md-tabs md-selected="selectedIndex" class="md-primary" md-no-pagination="true" md-no-ink="true">
+<md-tabs md-selected="selectedIndex" class="md-primary" md-no-pagination="true" md-no-ink="false">
   <md-tab label="Trends" md-on-select="go('motions.trending')">
     <div ui-view="trending"></div>
   </md-tab>

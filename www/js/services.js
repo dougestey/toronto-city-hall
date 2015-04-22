@@ -1,4 +1,4 @@
-angular.module('starter.services', [])
+angular.module('hall.services', [])
 
 .factory('Motions', function($http) {
 
@@ -8,11 +8,11 @@ angular.module('starter.services', [])
     all: function() {
       return $http.get('data/voting.json').then(function(response){
         votes = response.data;
-        return votes;
+        return votes.slice(0,19);
       })
     },
     remove: function(vote) {
-      chats.splice(votes.indexOf(vote), 1);
+      votes.splice(votes.indexOf(vote), 1);
     },
     get: function(voteId) {
       for (var i = 0; i < votes.length; i++) {

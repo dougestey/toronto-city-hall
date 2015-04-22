@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>Toronto City Hall</title>
 
     <!-- roboto -->
     <link href="lib/roboto-fontface/css/roboto-fontface.css" rel="stylesheet">
@@ -11,11 +11,11 @@
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
-
     <!-- angular-material js -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="lib/angular-aria/angular-aria.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
     <script src="lib/angular-material/angular-material.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
@@ -26,23 +26,10 @@
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
   </head>
-  <body ng-app="starter">
-    <!--<ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-    </ion-nav-bar>-->
+  <body ng-app="hall">
     <div layout="column" layout-fill>
-      <!--<md-toolbar class="md-default-theme" layout="row">
-        <div class="md-toolbar-tools">
-          <span>City Hall</span>
-          <span flex></span>
-          <md-button>
-            Help
-          </md-button>
-        </div>
-      </md-toolbar>-->
       <md-content id="main">
-        <ion-nav-view></ion-nav-view>
+        <ui-view></ui-view>
       </md-content>
     </div>
   </body>
