@@ -59,3 +59,8 @@ md-tabs {
 .md-paginating .md-header-items-container {
   left: 0;
   right: 0; }
+
+a.md-button.md-default-theme.md-fab, .md-button.md-default-theme.md-fab {
+  position: absolute;
+  bottom: 2%;
+  right: 2%; }
