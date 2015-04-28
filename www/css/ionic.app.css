@@ -29,7 +29,6 @@ md-toolbar.md-default-theme {
   letter-spacing: 0.005em; }
   md-toolbar.md-default-theme h1, md-toolbar.md-default-theme h2 {
     font-weight: normal;
-    font-size: inherit;
     color: inherit;
     margin: 0;
     line-height: inherit; }
