@@ -60,6 +60,14 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
         templateUrl: 'templates/councillors/roster.html'
       }
     }
+  })
+  .state('councillors.attendance', {
+    url: '/attendance',
+    views: {
+      'attendance': {
+        templateUrl: 'templates/councillors/attendance.html'
+      }
+    }
   });
 
   // if none of the above states are matched, use this as the fallback

@@ -23,4 +23,17 @@ angular.module('hall.services', [])
       return null;
     }
   }
+})
+.factory('Council', function($http) {
+
+  var council = [];
+
+  return {
+    all: function() {
+      return $http.get('data/council.json').then(function(response){
+        council = response.data;
+        return council;
+      })
+    }
+  }
 });

@@ -1,6 +1,8 @@
-<md-card>
-  <md-card-content>
-    <h2 class="md-title">Upcoming</h2>
-    <p>Content</p>
-  </md-card-content>
-</md-card>
+<md-list>
+  <md-list-item class="md-2-line" ng-repeat="motion in motions">
+    <div class="md-list-item-text">
+      <h3>{{ motion["Agenda Item #"] }}</h3>
+      <p>{{ motion["Agenda Item Title"] }}</p>
+    </div>
+  </md-list-item>
+</md-list>

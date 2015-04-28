@@ -18,10 +18,13 @@ angular.module('hall.controllers', [])
     $scope.motions = data;
   });
 })
-.controller('CouncillorsCtrl', function($scope, $state) {
+.controller('CouncillorsCtrl', function($scope, $state, Council) {
   $scope.go = function(destination){
     $state.go(destination);
   }
+  Council.all().then(function(data){
+    $scope.council = data;
+  });
 })
 .controller('MenuCtrl', function ($scope, $state, $mdSidenav) {
   $scope.go = function(destination){
