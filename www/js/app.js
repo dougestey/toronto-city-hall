@@ -1,5 +1,7 @@
 angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.controllers', 'hall.services'])
 
+.constant('apiUrl', 'http://localhost:1337')
+
 .run(function(){
   //
 })
@@ -7,11 +9,11 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
 .config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
 
   $mdThemingProvider.theme('default')
-    .primaryPalette('cyan', {
+    .primaryPalette('blue', {
       'default': '500'
     })
-    .accentPalette('lime', {
-      'default': 'A200'
+    .accentPalette('yellow', {
+      'default': '400'
     });
 
   $stateProvider

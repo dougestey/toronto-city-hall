@@ -24,13 +24,14 @@ angular.module('hall.services', [])
     }
   }
 })
-.factory('Council', function($http) {
+.factory('Council', function($http, apiUrl) {
 
   var council = [];
 
   return {
     all: function() {
-      return $http.get('data/council.json').then(function(response){
+      return $http.get(apiUrl + '/councillor').then(function(response){
+        console.log(response);
         council = response.data;
         return council;
       })

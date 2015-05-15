@@ -18,10 +18,11 @@ angular.module('hall.controllers', [])
     $scope.motions = data;
   });
 })
-.controller('CouncillorsCtrl', function($scope, $state, Council) {
+.controller('CouncillorsCtrl', function($scope, $state, apiUrl, Council) {
   $scope.go = function(destination){
     $state.go(destination);
   }
+  $scope.apiUrl = apiUrl;
   Council.all().then(function(data){
     $scope.council = data;
   });
