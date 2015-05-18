@@ -4,3 +4,7 @@
 
 # Bower
 /www/lib/
+
+# Cordova
+/platforms/
+/plugins/
