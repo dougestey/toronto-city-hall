@@ -15,11 +15,12 @@ More screens [here](https://github.com/designcofounders/toronto-city-hall/tree/m
 ## Setup
 
 ```
-git clone https://github.com/designcofounders/toronto-city-hall.git 
+git clone https://github.com/designcofounders/toronto-city-hall.git
 cd toronto-city-hall
+
 npm install
 node_modules/.bin/gulp install
-node_modules/.bin/gulp
+node_modules/.bin/gulp sass
 
 # TODO: more
 ```
