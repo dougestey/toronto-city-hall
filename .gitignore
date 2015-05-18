@@ -1,0 +1,10 @@
+# NPM
+/node_modules/
+/npm-debug.log
+
+# Bower
+/www/lib/
+
+# Cordova
+/platforms/
+/plugins/

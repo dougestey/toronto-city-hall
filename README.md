@@ -11,3 +11,22 @@ You vote once every four years, but how much else do you know about what happens
 ![Motion List](https://raw.githubusercontent.com/designcofounders/toronto-city-hall/master/screens/motion_list.png)
 
 More screens [here](https://github.com/designcofounders/toronto-city-hall/tree/master/screens).
+
+## Setup
+
+```
+git clone https://github.com/designcofounders/toronto-city-hall.git
+cd toronto-city-hall
+
+npm install
+node_modules/.bin/gulp install
+node_modules/.bin/gulp sass
+
+npm install -g cordova # May require sudo
+cordova platform add browser
+cordova emulate browser
+cordova serve 8000
+```
+
+You may now access the app in your browser at
+http://localhost:8000/browser/www
