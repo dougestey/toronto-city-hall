@@ -1,3 +1,6 @@
+# NPM
 /node_modules/
-/lib/
 /npm-debug.log
+
+# Bower
+/www/lib/
