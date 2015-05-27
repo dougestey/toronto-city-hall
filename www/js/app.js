@@ -24,14 +24,6 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
     templateUrl: 'templates/motions.html',
     controller: 'MotionsCtrl'
   })
-  .state('motions.trending', {
-    url: '/trending',
-    views: {
-      'trending': {
-        templateUrl: 'templates/motions/trending.html'
-      }
-    }
-  })
   .state('motions.upcoming', {
     url: '/upcoming',
     views: {
@@ -40,11 +32,11 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
       }
     }
   })
-  .state('motions.favourites', {
-    url: '/favourites',
+  .state('motions.latest', {
+    url: '/latest',
     views: {
-      'favourites': {
-        templateUrl: 'templates/motions/favourites.html'
+      'latest': {
+        templateUrl: 'templates/motions/latest.html'
       }
     }
   })
@@ -54,6 +46,9 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
     abstract: true,
     templateUrl: 'templates/councillors.html',
     controller: 'CouncillorsCtrl'
+  })
+  .state('councillors.councillor', {
+    url: '/:id'
   })
   .state('councillors.roster', {
     url: '/roster',
@@ -73,6 +68,6 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/motions/trending');
+  $urlRouterProvider.otherwise('/motions/latest');
 
 });

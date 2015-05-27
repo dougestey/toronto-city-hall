@@ -1,23 +1,23 @@
 angular.module('hall.services', [])
 
-.factory('Motions', function($http) {
+.factory('Motions', function($http, apiUrl) {
 
-  var votes = [];
+  var motions = [];
 
   return {
     all: function() {
-      return $http.get('data/voting.json').then(function(response){
-        votes = response.data;
-        return votes.slice(0,19);
+      return $http.get(apiUrl + '/motion?where={%22identifier%22:{%22contains%22:%22.CC%22}}&sort=identifier%20DESC&limit=100').then(function(response){
+        motions = response.data;
+        return motions;
       })
     },
     remove: function(vote) {
-      votes.splice(votes.indexOf(vote), 1);
+      motions.splice(votes.indexOf(vote), 1);
     },
-    get: function(voteId) {
-      for (var i = 0; i < votes.length; i++) {
-        if (votes[i].id === parseInt(voteId)) {
-          return votes[i];
+    get: function(motionId) {
+      for (var i = 0; i < motions.length; i++) {
+        if (motions[i].id === parseInt(motionId)) {
+          return motions[i];
         }
       }
       return null;
@@ -31,7 +31,6 @@ angular.module('hall.services', [])
   return {
     all: function() {
       return $http.get(apiUrl + '/councillor').then(function(response){
-        console.log(response);
         council = response.data;
         return council;
       })

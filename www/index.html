@@ -33,7 +33,7 @@
           <h1 class="md-toolbar-tools">City Hall</h1>
         </md-toolbar>
         <md-content layout-padding ng-controller="MenuCtrl">
-          <md-button ng-click="go('motions.trending')" class="md-primary">
+          <md-button ng-click="go('motions.latest')" class="md-primary">
             Motions
           </md-button>
           <br/>
@@ -49,7 +49,7 @@
       <md-content id="main">
         <ui-view></ui-view>
       </md-content>
-      <button class="md-fab md-button md-default-theme" ng-transclude="" aria-label="Eat cake">
+      <button class="md-fab md-button md-default-theme" aria-label="Eat cake">
         <md-icon md-svg-src="img/icons/add.svg" class="ng-scope ng-isolate-scope md-default-theme" aria-hidden="true"></md-icon>
       </button>
     </div>

@@ -14,13 +14,10 @@
 </md-toolbar>
 
 <md-tabs md-selected="selectedIndex" class="md-primary" md-no-pagination="true">
-  <md-tab label="Trends" md-on-select="go('motions.trending')">
-    <div ui-view="trending"></div>
+  <md-tab label="Latest" md-on-select="go('motions.latest')">
+    <div ui-view="latest"></div>
   </md-tab>
   <md-tab label="Upcoming" md-on-select="go('motions.upcoming')">
     <div ui-view="upcoming"></div>
-  </md-tab>
-  <md-tab label="Faves" md-on-select="go('motions.favourites')">
-    <div ui-view="favourites"></div>
   </md-tab>
 </md-tabs>
