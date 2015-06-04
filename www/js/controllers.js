@@ -9,23 +9,35 @@ angular.module('hall.controllers', [])
     }
   }
   $scope.toggleMenu = buildToggler('menu'); 
-})
-.controller('MotionsCtrl', function($scope, $state, Motions) {
   $scope.go = function(destination){
     $state.go(destination);
   }
+})
+.controller('MotionsCtrl', function($scope, $state, Motions) {
   Motions.all().then(function(data){
     $scope.motions = data;
   });
 })
 .controller('CouncillorsCtrl', function($scope, $state, apiUrl, Council) {
-  $scope.go = function(destination){
-    $state.go(destination);
-  }
   $scope.apiUrl = apiUrl;
   Council.all().then(function(data){
     $scope.council = data;
   });
+})
+.controller('WardsCtrl', function($scope, $state, apiUrl, Wards) {
+  //$scope.apiUrl = apiUrl;
+  Wards.all().then(function(data){
+    console.log(data);
+    $scope.wards = data;
+  });
+})
+.controller('CouncillorCtrl', function($scope, $state, apiUrl, $stateParams) {
+  /*$scope.apiUrl = apiUrl;
+  Council.all().then(function(data){
+    $scope.council = data;
+  });*/
+  $scope.params = $stateParams;
+  $scope.councillor = $stateParams.councillor;
 })
 .controller('MenuCtrl', function ($scope, $state, $mdSidenav) {
   $scope.go = function(destination){

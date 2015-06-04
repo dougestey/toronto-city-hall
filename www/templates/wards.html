@@ -4,7 +4,7 @@
       <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
     </md-button>
     <h2>
-      <span>Councillors</span>
+      <span>Wards</span>
     </h2>
     <span flex></span>
     <md-button class="md-icon-button" aria-label="More">
@@ -14,8 +14,8 @@
 </md-toolbar>
 
 <md-tabs md-selected="selectedIndex" class="md-primary" md-no-pagination="true">
-  <md-tab label="Members" md-on-select="go('councillors.roster')">
-    <div ui-view="roster"></div>
+  <md-tab label="List" md-on-select="go('wards.list')">
+    <div ui-view="list"></div>
   </md-tab>
   <!--<md-tab label="Attendance" md-on-select="go('councillors.attendance')">
     <div ui-view="attendance"></div>
