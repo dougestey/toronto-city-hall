@@ -24,7 +24,25 @@ angular.module('hall.controllers', [])
       //console.log('Current state:'+$rootScope.currentState)
   });
 })
-.controller('MotionsCtrl', function($scope, $state, Motions) {
+.controller('MotionsCtrl', function($scope, $state, $mdDialog, Motions) {
+  $scope.interact = function(ev) {
+    // Appending dialog to document.body to cover sidenav in docs app
+    // Modal dialogs should fully cover application
+    // to prevent interaction outside of dialog
+    $mdDialog.show(
+      $mdDialog.confirm()
+        .parent(angular.element(document.body))
+        .title('You swiped a motion')
+        .content('Now let\'s do something about it.')
+        .ariaLabel('Alert Dialog Demo')
+        .cancel('I hate this')
+        .ok('I love this')
+        .targetEvent(ev)
+    );
+  };
+  $scope.swipeLeft = function(){
+    console.log('swiped left');
+  };
   Motions.all().then(function(data){
     $scope.motions = data;
   });
