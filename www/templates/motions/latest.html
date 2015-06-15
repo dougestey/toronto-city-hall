@@ -1,5 +1,5 @@
 <md-list>
-  <md-list-item class="md-2-line" ng-repeat="motion in motions">
+  <md-list-item class="md-2-line" ng-repeat="motion in motions" md-swipe-right="interact()">
     <div class="md-list-item-text">
       <h3>{{ motion.identifier }}</h3>
       <p>{{ motion.title }}</p>

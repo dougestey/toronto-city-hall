@@ -1,6 +1,6 @@
 angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.controllers', 'hall.services'])
 
-.constant('apiUrl', 'http://localhost:1337')
+.constant('apiUrl', 'http://localhost:1338')
 
 .run(function(){
   //
@@ -41,6 +41,7 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
     }
   })
 
+
   .state('councillors', {
     url: '/councillors',
     abstract: true,
@@ -48,7 +49,13 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
     controller: 'CouncillorsCtrl'
   })
   .state('councillors.councillor', {
-    url: '/:id'
+    url: '/:councillor',
+    views: {
+      'roster': {
+        controller: 'CouncillorCtrl',
+        templateUrl: 'templates/councillors/single.html'
+      }
+    }
   })
   .state('councillors.roster', {
     url: '/roster',
@@ -58,14 +65,26 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
       }
     }
   })
-  .state('councillors.attendance', {
-    url: '/attendance',
+
+  .state('wards', {
+    url: '/wards',
+    abstract: true,
+    templateUrl: 'templates/wards.html',
+    controller: 'WardsCtrl'
+  })
+  .state('wards.list', {
+    url: '/list',
     views: {
-      'attendance': {
-        templateUrl: 'templates/councillors/attendance.html'
+      'list': {
+        templateUrl: 'templates/wards/list.html'
       }
     }
-  });
+  })
+
+  .state('settings', {
+    url: '/settings',
+    templateUrl: 'templates/settings.html'
+  })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/motions/latest');

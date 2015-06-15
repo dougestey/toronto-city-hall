@@ -36,4 +36,17 @@ angular.module('hall.services', [])
       })
     }
   }
+})
+.factory('Wards', function($http, apiUrl) {
+
+  var council = [];
+
+  return {
+    all: function() {
+      return $http.get(apiUrl + '/ward?sort=id%20ASC').then(function(response){
+        wards = response.data;
+        return wards;
+      })
+    }
+  }
 });
