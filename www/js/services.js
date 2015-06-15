@@ -43,7 +43,7 @@ angular.module('hall.services', [])
 
   return {
     all: function() {
-      return $http.get(apiUrl + '/ward').then(function(response){
+      return $http.get(apiUrl + '/ward?sort=id%20ASC').then(function(response){
         wards = response.data;
         return wards;
       })

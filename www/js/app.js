@@ -1,6 +1,6 @@
 angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.controllers', 'hall.services'])
 
-.constant('apiUrl', 'http://localhost:1337')
+.constant('apiUrl', 'http://localhost:1338')
 
 .run(function(){
   //
@@ -79,6 +79,11 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
         templateUrl: 'templates/wards/list.html'
       }
     }
+  })
+
+  .state('settings', {
+    url: '/settings',
+    templateUrl: 'templates/settings.html'
   })
 
   // if none of the above states are matched, use this as the fallback
