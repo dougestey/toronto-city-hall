@@ -8,7 +8,7 @@ You vote once every four years, but how much else do you know about what happens
 - Look up individual councillor profiles and voting trends
 - Get in direct contact with your city councillor about a particular issue
 
-![Motion List](https://raw.githubusercontent.com/designcofounders/toronto-city-hall/master/screens/motion_list.png)
+<img src="https://raw.githubusercontent.com/designcofounders/toronto-city-hall/master/screens/motion_list.png" width="512">
 
 More screens [here](https://github.com/designcofounders/toronto-city-hall/tree/master/screens).
 
