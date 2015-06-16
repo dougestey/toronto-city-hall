@@ -1,4 +1,4 @@
-angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.controllers', 'hall.services'])
+angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngTouch', 'ngMaterial', 'hall.controllers', 'hall.directives', 'hall.services'])
 
 .constant('apiUrl', 'http://localhost:1338')
 

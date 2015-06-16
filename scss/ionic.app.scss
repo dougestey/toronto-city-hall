@@ -29,6 +29,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Roboto';
 }
 
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 md-icon.md-default-theme {
   color: rgba(255,255,255,0.87);
 }
@@ -65,9 +73,34 @@ md-tabs {
   position: absolute;
 }
 
+md-tab-content {
+  overflow-x: hidden;
+}
+
 md-sidenav {
   .md-button {
     text-align: left;
+  }
+}
+
+md-list-item {
+  cursor: pointer;
+  position: relative;
+  .md-list-item-text {
+    position: relative;
+    background-color: white;
+  }
+  .md-list-item-actions {
+    position: absolute;
+    top: 30px;
+    opacity: 0;
+    transition: opacity 0.35s;
+  }
+}
+
+md-icon {
+  &.white svg {
+    fill: rgba(255,255,255,0.87);
   }
 }
 

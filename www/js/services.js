@@ -6,7 +6,7 @@ angular.module('hall.services', [])
 
   return {
     all: function() {
-      return $http.get(apiUrl + '/motion?where={%22identifier%22:{%22contains%22:%22.CC%22}}&sort=identifier%20DESC&limit=100').then(function(response){
+      return $http.get(apiUrl + '/motion?&sort=identifier%20DESC&limit=100').then(function(response){
         motions = response.data;
         return motions;
       })
