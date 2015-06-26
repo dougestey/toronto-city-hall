@@ -133,3 +133,16 @@ a.md-button.md-default-theme.md-fab, .md-button.md-default-theme.md-fab {
     margin: 0 auto;
   }
 }
+
+.motion {
+  .result {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    &.pass {
+      color: green;
+    }
+    &.fail {
+      color: red;
+    }
+  }
+}

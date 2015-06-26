@@ -6,7 +6,7 @@ angular.module('hall.services', [])
 
   return {
     all: function() {
-      return $http.get(apiUrl + '/motion?&sort=identifier%20DESC&limit=100').then(function(response){
+      return $http.get(apiUrl + '/voteevent?&sort=identifier%20DESC&limit=100').then(function(response){
         motions = response.data;
         return motions;
       })

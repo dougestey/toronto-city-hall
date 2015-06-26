@@ -97,3 +97,11 @@ a.md-button.md-default-theme.md-fab, .md-button.md-default-theme.md-fab {
   height: 400px;
   width: 300px;
   margin: 0 auto; }
+
+.motion .result {
+  text-transform: uppercase;
+  font-size: 0.7em; }
+  .motion .result.pass {
+    color: green; }
+  .motion .result.fail {
+    color: red; }
