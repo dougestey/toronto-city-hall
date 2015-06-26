@@ -1,6 +1,6 @@
 angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngTouch', 'ngMaterial', 'hall.controllers', 'hall.directives', 'hall.services'])
 
-.constant('apiUrl', 'http://localhost:1338')
+.constant('apiUrl', 'http://localhost:1337')
 
 .run(function(){
   //
@@ -48,20 +48,20 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngTouch', 'ngMateri
     templateUrl: 'templates/councillors.html',
     controller: 'CouncillorsCtrl'
   })
-  .state('councillors.councillor', {
-    url: '/:councillor',
-    views: {
-      'roster': {
-        controller: 'CouncillorCtrl',
-        templateUrl: 'templates/councillors/single.html'
-      }
-    }
-  })
   .state('councillors.roster', {
     url: '/roster',
     views: {
       'roster': {
         templateUrl: 'templates/councillors/roster.html'
+      }
+    }
+  })
+  .state('councillors.councillor', {
+    url: '/:id',
+    views: {
+      'roster': {
+        controller: 'CouncillorCtrl',
+        templateUrl: 'templates/councillors/single.html'
       }
     }
   })

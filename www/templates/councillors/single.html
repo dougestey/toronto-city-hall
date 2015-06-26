@@ -1,18 +1,10 @@
 <div layout="column" class="councillor single">
-  <md-button aria-label="Add to Favourites" class="md-fab">
+  <!--<md-button aria-label="Add to Favourites" class="md-fab">
     <md-icon md-svg-src="img/favorite_outline.svg"></md-icon>
-  </md-button>
-  <md-content class="lower md-default md-hue-1">
+  </md-button>-->
+  <img ng-src="{{ apiUrl }}{{ councillor.image_url }}" class="md-avatar">
+  <md-content class="md-default">
     <h2 class="md-title">{{ councillor.first_name }} {{ councillor.last_name }}</h2>
     <h5 class="md-subhead">{{ councillor.email }}</h5>
-    <pre>{{ params }}
-    <md-list>
-      <md-list-item class="md-2-line">
-        <div class="md-list-item-text">
-          <h3>Some detail</h3>
-          <p>detail type</p>
-        </div>
-      </md-list-item>
-    </md-list>
   </md-content>
 </div>

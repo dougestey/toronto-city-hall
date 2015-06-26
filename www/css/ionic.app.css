@@ -65,12 +65,14 @@ md-list-item {
   position: relative; }
   md-list-item .md-list-item-text {
     position: relative;
-    background-color: white; }
+    background-color: white;
+    -webkit-transform: translate3d(0px, 0px, 0px); }
   md-list-item .md-list-item-actions {
     position: absolute;
     top: 30px;
     opacity: 0;
-    transition: opacity 0.35s; }
+    transition: opacity 0.35s;
+    -webkit-transform: translate3d(0px, 0px, 0px); }
 
 md-icon.white svg {
   fill: rgba(255, 255, 255, 0.87); }
@@ -90,3 +92,8 @@ a.md-button.md-default-theme.md-fab, .md-button.md-default-theme.md-fab {
   position: fixed;
   bottom: 2%;
   right: 2%; }
+
+.councillor.single .md-avatar {
+  height: 400px;
+  width: 300px;
+  margin: 0 auto; }
