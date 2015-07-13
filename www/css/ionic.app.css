@@ -62,7 +62,8 @@ md-sidenav .md-button {
 
 md-list-item {
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  border-bottom: 1px #f2f2f2 solid; }
   md-list-item .md-list-item-text {
     position: relative;
     background-color: white;

@@ -22,6 +22,9 @@ angular.module('hall.directives', [])
             if (delta > 36) {
               angular.element(action).css('opacity', '1');
             }
+            if (delta < 36) {
+              angular.element(action).css('opacity', '0');
+            }
           },
           'end': function(coords) {
             var delta = coords.x - startX;
