@@ -5,6 +5,9 @@
 # Bower
 /www/lib/
 
+# Ignore generate CSS
+/www/css/
+
 # Cordova
 /platforms/
 /plugins/
