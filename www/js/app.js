@@ -1,6 +1,6 @@
 angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.controllers', 'hall.services'])
 
-.constant('apiUrl', 'http://localhost:1338')
+.constant('apiUrl', 'http://localhost:1337')
 
 .run(function(){
   //
