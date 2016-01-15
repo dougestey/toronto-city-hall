@@ -3,7 +3,7 @@
     <img ng-src="{{ councillor.image }}" class="md-avatar" ui-sref="councillors.councillor({ id: councillor.id, councillor: councillor })">
     <div class="md-list-item-text">
       <h3>{{ councillor.name }}</h3>
-      <p>Ward {{ councillor.ward.number }} {{ councillor.ward.region }}</p>
+      <p>{{ councillor.division.name }}</p>
     </div>
   </md-list-item>
 </md-list>
