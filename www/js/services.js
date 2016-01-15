@@ -6,7 +6,7 @@ angular.module('hall.services', [])
 
   return {
     all: function() {
-      return $http.get(apiUrl + '/motion?sort=identifier%20DESC&limit=100').then(function(response){
+      return $http.get(apiUrl + '/agenda_items').then(function(response){
         motions = response.data;
         return motions;
       })
@@ -30,7 +30,7 @@ angular.module('hall.services', [])
 
   return {
     all: function() {
-      return $http.get(apiUrl + '/councillor').then(function(response){
+      return $http.get(apiUrl + '/people').then(function(response){
         council = response.data;
         return council;
       })
@@ -43,7 +43,7 @@ angular.module('hall.services', [])
 
   return {
     all: function() {
-      return $http.get(apiUrl + '/ward?sort=id%20ASC').then(function(response){
+      return $http.get(apiUrl + '/posts').then(function(response){
         wards = response.data;
         return wards;
       })

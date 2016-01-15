@@ -1,9 +1,9 @@
 <md-list>
   <md-list-item class="md-2-line" ng-repeat="motion in motions" md-swipe-right="interact()">
     <div class="md-list-item-text">
-      <h3>{{ motion.title }}</h3>
-      <h4>{{ motion.organization.name }}</h4>
-      <p>{{ motion.identifier }}</p>
+      <h3>{{ motion.description }}</h3>
+      <h4>{{ motion.event.name }}</h4>
+      <p>{{ motion.event.start_time | date : 'medium' : '-0500' }}</p>
     </div>
   </md-list-item>
 </md-list>
