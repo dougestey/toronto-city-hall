@@ -22,10 +22,9 @@ npm install
 node_modules/.bin/gulp install
 node_modules/.bin/gulp sass
 
-npm install -g cordova # May require sudo
-cordova platform add browser
-cordova emulate browser
-cordova serve 8000
+node_modules/.bin/cordova platform add browser
+node_modules/.bin/cordova emulate browser
+node_modules/.bin/cordova serve 8000
 ```
 
 You may now access the app in your browser at
