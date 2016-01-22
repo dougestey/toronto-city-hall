@@ -470,6 +470,18 @@
       "from": "cookie-signature@1.0.6",
       "resolved": "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz"
     },
+    "cordova": {
+      "version": "5.4.1",
+      "from": "cordova@>=5.4.0 <6.0.0",
+      "resolved": "https://registry.npmjs.org/cordova/-/cordova-5.4.1.tgz",
+      "dependencies": {
+        "nopt": {
+          "version": "3.0.1",
+          "from": "nopt@3.0.1",
+          "resolved": "https://registry.npmjs.org/nopt/-/nopt-3.0.1.tgz"
+        }
+      }
+    },
     "cordova-app-hello-world": {
       "version": "3.10.0",
       "from": "cordova-app-hello-world@3.10.0",
