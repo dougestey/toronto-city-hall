@@ -43,7 +43,7 @@ angular.module('hall.controllers', [])
   $scope.swipeLeft = function(){
     console.log('swiped left');
   };
-  Motions.all().then(function(data){
+  Motions.upcoming().then(function(data){
     $scope.motions = data;
   });
 })

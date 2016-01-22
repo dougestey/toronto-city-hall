@@ -87,6 +87,6 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
   })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/motions/latest');
+  $urlRouterProvider.otherwise('/motions/upcoming');
 
 });

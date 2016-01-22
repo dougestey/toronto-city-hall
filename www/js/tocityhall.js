@@ -393,6 +393,19 @@ window.toCityHallSchema = {
                             }
                         ],
                         "path": "/agenda_items/upcoming"
+                    },
+                    {
+                        "operations": [
+                            {
+                                "method": "GET",
+                                "nickname": "getAllLatestAgendaItems",
+                                "notes": "",
+                                "parameters": [],
+                                "summary": "Get all latest agenda items",
+                                "type": "App::AgendaItems"
+                            }
+                        ],
+                        "path": "/agenda_items/latest"
                     }
                 ],
                 "basePath": "https://tocityhall-api.herokuapp.com/v0",
