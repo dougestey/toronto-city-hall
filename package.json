@@ -18,9 +18,9 @@
     "node": "5.3.0"
   },
   "scripts": {
-    "install": "if [ ! -z \"$IS_HEROKU\" ]; then cordova platform add browser; fi",
+    "install": "if [ ! -z \"$IS_HEROKU\" ]; then cordova platform add browser && cordova prepare browser; fi",
     "postinstall": "gulp install && gulp sass",
-    "start": "node webapp.js"
+    "start": "cordova serve"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist@1"
