@@ -1,1 +1,1 @@
-web: node_modules/.bin/cordova serve $PORT
+web: node webapp.js
