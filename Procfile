@@ -1,1 +1,1 @@
-web: cordova serve $PORT
+web: node_modules/.bin/cordova serve $PORT

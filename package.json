@@ -20,7 +20,9 @@
     "node": "5.3.0"
   },
   "scripts": {
-    "start": "cordova serve $PORT"
+    "install": "node_modules/.bin/cordova platform add browser",
+    "postinstall": "node_modules/.bin/gulp install && node_modules/.bin/gulp sass",
+    "start": "node_modules/.bin/cordova serve $PORT"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist@1"
