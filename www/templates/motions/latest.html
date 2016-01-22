@@ -1,6 +1,6 @@
 <md-list ng-repeat="(start_time, motions) in motions | groupBy: 'event.start_time'">
   <md-subheader class="md-no-sticky">{{ start_time | date : 'fullDate'}}</md-subheader>
-  <md-list-item class="md-2-line" ng-repeat="motion in motions" md-swipe-right="interact()">
+  <md-list-item class="md-3-line" ng-repeat="motion in motions" md-swipe-right="interact()">
     <div class="md-list-item-text">
       <h3>{{ motion.description }}</h3>
       <h4>{{ motion.event.name }}</h4>
