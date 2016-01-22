@@ -1,0 +1,9 @@
+{
+  "name": "tocityhall-webapp",
+  "description": "",
+  "scripts": {},
+  "env": {
+    "IS_HEROKU": "true"
+  },
+  "addons": []
+}
