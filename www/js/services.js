@@ -3,7 +3,7 @@ angular.module('hall.services', ['hall.data'])
 .factory('Motions', function(cityApi) {
   return {
     all: function() {
-      return cityApi.agenda_items.getAllAgendaItems().then(function(items){
+      return cityApi.agenda_items.getAllUpcomingAgendaItems().then(function(items){
         return items;
       })
     },
