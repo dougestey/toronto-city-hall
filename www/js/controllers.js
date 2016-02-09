@@ -1,4 +1,4 @@
-angular.module('hall.controllers', [])
+angular.module('hall.controllers', ['hall.constants'])
 .controller('AppCtrl', function($scope, $rootScope, $state, $mdSidenav){
   function buildToggler(navID) {
     return function() {
@@ -43,7 +43,7 @@ angular.module('hall.controllers', [])
   $scope.swipeLeft = function(){
     console.log('swiped left');
   };
-  Motions.all().then(function(data){
+  Motions.upcoming().then(function(data){
     $scope.motions = data;
   });
 })

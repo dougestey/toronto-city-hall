@@ -1,6 +1,4 @@
-angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.controllers', 'hall.services'])
-
-.constant('apiUrl', 'http://localhost:1337')
+angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.controllers', 'hall.services', 'angular.filter'])
 
 .run(function(){
   //
@@ -87,6 +85,6 @@ angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.
   })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/motions/latest');
+  $urlRouterProvider.otherwise('/motions/upcoming');
 
 });

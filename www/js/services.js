@@ -1,14 +1,15 @@
-angular.module('hall.services', [])
+angular.module('hall.services', ['hall.data'])
 
-.factory('Motions', function($http, apiUrl) {
-
-  var motions = [];
-
+.factory('Motions', function(cityApi) {
   return {
-    all: function() {
-      return $http.get(apiUrl + '/motion?sort=identifier%20DESC&limit=100').then(function(response){
-        motions = response.data;
-        return motions;
+    latest: function() {
+      return cityApi.agenda_items.getAllLatestAgendaItems().then(function(items){
+        return items;
+      })
+    },
+    upcoming: function() {
+      return cityApi.agenda_items.getAllUpcomingAgendaItems().then(function(items){
+        return items;
       })
     },
     remove: function(vote) {
@@ -24,27 +25,19 @@ angular.module('hall.services', [])
     }
   }
 })
-.factory('Council', function($http, apiUrl) {
-
-  var council = [];
-
+.factory('Council', function(cityApi) {
   return {
     all: function() {
-      return $http.get(apiUrl + '/councillor').then(function(response){
-        council = response.data;
-        return council;
+      return cityApi.people.getAllPeople().then(function(people){
+        return people;
       })
     }
   }
 })
-.factory('Wards', function($http, apiUrl) {
-
-  var council = [];
-
+.factory('Wards', function(cityApi) {
   return {
     all: function() {
-      return $http.get(apiUrl + '/ward?sort=id%20ASC').then(function(response){
-        wards = response.data;
+      return cityApi.posts.getAllPosts().then(function(wards) {
         return wards;
       })
     }

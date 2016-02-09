@@ -14,10 +14,10 @@
 </md-toolbar>
 
 <md-tabs md-selected="selectedIndex" class="md-primary" md-no-pagination="true">
-  <md-tab label="Latest" md-on-select="go('motions.latest')">
-    <div ui-view="latest"></div>
-  </md-tab>
   <md-tab label="Upcoming" md-on-select="go('motions.upcoming')">
     <div ui-view="upcoming"></div>
+  </md-tab>
+  <md-tab label="Latest" md-on-select="go('motions.latest')">
+    <div ui-view="latest"></div>
   </md-tab>
 </md-tabs>
