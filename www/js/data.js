@@ -1,6 +1,7 @@
-angular.module('hall.data', ['swagger-client']).provider('cityApi', function($windowProvider) {
+angular.module('hall.data', ['swagger-client', 'hall.constants']).provider('cityApi', function(apiUrlStaging, $windowProvider) {
   var $window = $windowProvider.$get();
   var schema = $window.toCityHallSchema;
+  var apiUrl = apiUrlStaging;
 
   // Override the basepath in the loaded schema
   this.basePath = function(basePath) {
@@ -8,6 +9,8 @@ angular.module('hall.data', ['swagger-client']).provider('cityApi', function($wi
       api.apiDeclaration.basePath = basePath;
     });
   };
+
+  this.basePath(apiUrl);
 
   this.$get = ['swaggerClient', function(swaggerClient) {
     var api = swaggerClient(schema);

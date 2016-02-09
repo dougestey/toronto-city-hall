@@ -1,7 +1,5 @@
 angular.module('hall', ['ui.router', 'ngAria', 'ngAnimate', 'ngMaterial', 'hall.controllers', 'hall.services', 'angular.filter'])
 
-.constant('apiUrl', 'https://tocityhall-api.herokuapp.com/v0')
-
 .run(function(){
   //
 })

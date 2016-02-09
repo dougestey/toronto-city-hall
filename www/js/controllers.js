@@ -1,4 +1,4 @@
-angular.module('hall.controllers', [])
+angular.module('hall.controllers', ['hall.constants'])
 .controller('AppCtrl', function($scope, $rootScope, $state, $mdSidenav){
   function buildToggler(navID) {
     return function() {
