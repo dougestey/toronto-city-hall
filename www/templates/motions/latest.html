@@ -1,9 +1,12 @@
 <md-list>
-  <md-list-item class="md-2-line" ng-repeat="motion in motions" md-swipe-right="interact()">
-    <div class="md-list-item-text">
-      <h3>{{ motion.title }}</h3>
-      <h4>{{ motion.organization.name }}</h4>
-      <p>{{ motion.identifier }}</p>
+  <md-list-item class="md-2-line motion" ng-repeat="motion in motions" swipe-motion>
+    <div class="md-list-item-actions">
+      <md-icon md-svg-icon="img/icons/ic_launch_black_24px.svg">
     </div>
+    <div class="md-list-item-text">
+      <h3>{{ motion.motion.identifier }} <span class="result {{ motion.result }}">{{ motion.result }}ed</span></h3>
+      <p>{{ motion.motion.title }}</p>
+    </div>
+    <!--<md-divider></md-divider>-->
   </md-list-item>
 </md-list>

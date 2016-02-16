@@ -1,3 +1,4 @@
+@import url(../lib/angular-material/angular-material.css);
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -14,136 +15,94 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-
-$calm:                            #00bcd4 !default;
-
-// The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../lib/ionic/fonts" !default;
-
-// Include all of Ionic
-//@import "www/lib/ionic/scss/ionic";
-@import "../lib/angular-material/angular-material.css";
-
-body,
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Roboto';
-}
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Roboto'; }
 
 * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-}
+  user-select: none; }
 
 md-icon.md-default-theme {
-  color: rgba(255,255,255,0.87);
-}
+  color: rgba(255, 255, 255, 0.87); }
 
 md-toolbar.md-default-theme {
-  color: rgba(255,255,255,0.87);
+  color: rgba(255, 255, 255, 0.87);
   box-shadow: none;
   font-size: 1.3rem;
   font-weight: 400;
-  letter-spacing: 0.005em;
-  //padding-top: 25px;
-  h1, h2 {
+  letter-spacing: 0.005em; }
+  md-toolbar.md-default-theme h1, md-toolbar.md-default-theme h2 {
     font-weight: normal;
-    //font-size: inherit;
     color: inherit;
     margin: 0;
-    line-height: inherit;
-  }
-}
+    line-height: inherit; }
 
 md-content#main {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  top: 0;
-}
+  top: 0; }
 
 md-tabs {
   top: 63px;
-  //top: 88px;
   left: 0;
   right: 0;
   bottom: 0;
-  position: absolute;
-}
+  position: absolute; }
 
 md-tab-content {
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
-md-sidenav {
-  .md-button {
-    text-align: left;
-  }
-}
+md-sidenav .md-button {
+  text-align: left; }
 
 md-list-item {
   cursor: pointer;
   position: relative;
-  border-bottom: 1px #f2f2f2 solid;
-  .md-list-item-text {
+  border-bottom: 1px #f2f2f2 solid; }
+  md-list-item .md-list-item-text {
     position: relative;
     background-color: white;
-    -webkit-transform: translate3d(0px,0px,0px);
-  }
-  .md-list-item-actions {
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  md-list-item .md-list-item-actions {
     position: absolute;
     top: 30px;
     opacity: 0;
     transition: opacity 0.35s;
-    -webkit-transform: translate3d(0px,0px,0px);
-  }
-}
+    -webkit-transform: translate3d(0px, 0px, 0px); }
 
-md-icon {
-  &.white svg {
-    fill: rgba(255,255,255,0.87);
-  }
-}
+md-icon.white svg {
+  fill: rgba(255, 255, 255, 0.87); }
 
 .md-tabs-content {
   bottom: 0;
   top: 112px;
   left: 0;
   right: 0;
-  position: absolute;
-}
+  position: absolute; }
 
 .md-paginating .md-header-items-container {
   left: 0;
-  right: 0;
-}
+  right: 0; }
 
 a.md-button.md-default-theme.md-fab, .md-button.md-default-theme.md-fab {
   position: fixed;
   bottom: 2%;
-  right: 2%;
-}
+  right: 2%; }
 
-.councillor.single {
-  .md-avatar {
-    height: 400px;
-    width: 300px;
-    margin: 0 auto;
-  }
-}
+.councillor.single .md-avatar {
+  height: 400px;
+  width: 300px;
+  margin: 0 auto; }
 
-.motion {
-  .result {
-    text-transform: uppercase;
-    font-size: 0.7em;
-    &.pass {
-      color: green;
-    }
-    &.fail {
-      color: red;
-    }
-  }
-}
+.motion .result {
+  text-transform: uppercase;
+  font-size: 0.7em; }
+  .motion .result.pass {
+    color: green; }
+  .motion .result.fail {
+    color: red; }

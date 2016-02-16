@@ -1,9 +1,9 @@
 <md-list>
-  <md-list-item class="md-2-line" ng-repeat="councillor in council">
-    <img ng-src="{{ apiUrl }}{{ councillor.image_url }}" class="md-avatar" ui-sref="councillors.councillor({ id: councillor.id, councillor: councillor })">
+  <md-list-item class="md-2-line" ng-repeat="councillor in council" ng-click="loadCouncillor(councillor.id)">
+    <img ng-src="{{ apiUrl }}{{ councillor.image_url }}" class="md-avatar">
     <div class="md-list-item-text">
       <h3>{{ councillor.last_name }}, {{ councillor.first_name }}</h3>
-      <p>Ward {{ councillor.ward.number }} {{ councillor.ward.region }}</p>
+      <p>{{ councillor.ward.region }}</p>
     </div>
   </md-list-item>
 </md-list>

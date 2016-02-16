@@ -1,19 +1,19 @@
 <md-toolbar>
   <div class="md-toolbar-tools">
     <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleMenu()">
-      <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+      <md-icon class="white" md-svg-icon="img/icons/ic_menu_black_24px.svg"></md-icon>
     </md-button>
     <h2>
       <span>Wards</span>
     </h2>
     <span flex></span>
     <md-button class="md-icon-button" aria-label="More">
-      <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+      <md-icon class="white" md-svg-icon="img/icons/ic_more_vert_black_24px.svg"></md-icon>
     </md-button>
   </div>
 </md-toolbar>
 
-<md-tabs md-selected="selectedIndex" class="md-primary" md-no-pagination="true">
+<md-tabs md-selected="selectedIndex" class="md-primary" md-no-pagination="true" md-stretch-tabs="always">
   <md-tab label="List" md-on-select="go('wards.list')">
     <div ui-view="list"></div>
   </md-tab>

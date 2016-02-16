@@ -34,6 +34,12 @@ angular.module('hall.services', [])
         council = response.data;
         return council;
       })
+    },
+    one: function(id) {
+      return $http.get(apiUrl + '/councillor/' + id).then(function(response){
+        council = response.data;
+        return council;
+      })
     }
   }
 })

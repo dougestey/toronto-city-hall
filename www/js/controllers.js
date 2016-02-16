@@ -35,13 +35,10 @@ angular.module('hall.controllers', [])
         .title('You swiped a motion')
         .content('Now let\'s do something about it.')
         .ariaLabel('Alert Dialog Demo')
-        .cancel('I hate this')
-        .ok('I love this')
+        .cancel('I\'m against this')
+        .ok('I support this')
         .targetEvent(ev)
     );
-  };
-  $scope.swipeLeft = function(){
-    console.log('swiped left');
   };
   Motions.all().then(function(data){
     $scope.motions = data;
@@ -52,6 +49,10 @@ angular.module('hall.controllers', [])
   Council.all().then(function(data){
     $scope.council = data;
   });
+  $scope.loadCouncillor = function(id){
+    console.log(id);
+    $state.go('councillors.councillor', { id: id })
+  };
 })
 .controller('WardsCtrl', function($scope, $state, apiUrl, Wards) {
   //$scope.apiUrl = apiUrl;
@@ -60,13 +61,11 @@ angular.module('hall.controllers', [])
     $scope.wards = data;
   });
 })
-.controller('CouncillorCtrl', function($scope, $state, apiUrl, $stateParams) {
-  /*$scope.apiUrl = apiUrl;
-  Council.all().then(function(data){
-    $scope.council = data;
-  });*/
-  $scope.params = $stateParams;
-  $scope.councillor = $stateParams.councillor;
+.controller('CouncillorCtrl', function($scope, $state, apiUrl, $stateParams, Council) {
+  $scope.apiUrl = apiUrl;
+  Council.one($stateParams.id).then(function(data){
+    $scope.councillor = data;
+  });
 })
 .controller('MenuCtrl', function ($scope, $state, $mdSidenav) {
   $scope.go = function(destination){
